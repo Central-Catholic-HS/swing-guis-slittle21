@@ -1,0 +1,46 @@
+import javax.swing.JOptionPane;
+
+public class EquationGenerator
+{
+  public static void main(String[] args)
+  {
+      String xImput1;
+      String yImput1;
+      
+      String xImput2;
+      String yImput2;
+      
+      double x1;
+      double y1;
+      
+      double x2;
+      double y2;
+      
+      double b;
+      double m;
+      
+      xImput1 = JOptionPane.showInputDialog("x-cordinate 1:");
+      yImput1 = JOptionPane.showInputDialog("y-cordinate 1:");
+      
+      xImput2 = JOptionPane.showInputDialog("x-cordinate 2:");
+      yImput2 = JOptionPane.showInputDialog("y-cordinate 2:");
+     
+      x1 = Double.parseDouble(xImput1);
+      y1 = Double.parseDouble(yImput1);
+      
+      x2 = Double.parseDouble(xImput2);
+      y2 = Double.parseDouble(yImput2);
+      
+      m = (x2-x1)/(y2-y1);
+      b = y1 - (m*x1);
+      
+      JOptionPane.showMessageDialog(null, "y = " + m + "x + (" + b + ")");
+      
+      System.exit(0);
+    }
+}
+
+      
+      
+      
+      
